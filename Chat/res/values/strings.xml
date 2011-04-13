@@ -7,6 +7,7 @@
         <item>Online</item>
         <item>Offline</item>
         <item>Busy</item>
+        <item>Away</item>
     </string-array>
         <string name="status_prompt">Status</string>
 </resources>
