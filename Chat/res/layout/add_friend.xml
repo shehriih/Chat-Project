@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent" android:layout_width="match_parent" android:id="@+id/root">
+    <TextView android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_margin="2px" android:id="@+id/add_friend_title" android:layout_width="match_parent" android:gravity="center" android:text="@string/add_friend_title"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/add_friend_title" android:layout_alignLeft="@+id/add_friend_title" android:layout_alignRight="@+id/add_friend_title" android:id="@+id/add_row" android:weightSum="1.0">
+        <TextView android:layout_height="wrap_content" android:id="@+id/email_label" android:layout_width="wrap_content" android:layout_weight=".1" android:text="@string/email_label"></TextView>
+        <EditText android:layout_height="wrap_content" android:id="@+id/email_text_edit" android:layout_width="wrap_content" android:layout_weight=".8" android:inputType="textEmailAddress" android:hint="@string/email_hint"></EditText>
+        <Button android:id="@+id/add_button" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight=".10" android:text="@string/add_button"></Button>
+    </LinearLayout>
+</RelativeLayout>
