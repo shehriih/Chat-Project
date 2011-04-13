@@ -2,4 +2,11 @@
 <resources>
     <string name="hello">Hello World, chat!</string>
     <string name="app_name">ChatApp</string>
+    <string name="nameText">Test</string>
+    <string-array name="statusArray">
+        <item>Online</item>
+        <item>Offline</item>
+        <item>Busy</item>
+    </string-array>
+        <string name="status_prompt">Status</string>
 </resources>
