@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="fill_parent" android:layout_width="match_parent" android:id="@+id/root">
-    <TextView android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_margin="2px" android:id="@+id/name" android:text="@string/nameText" android:layout_width="300px"></TextView>
-    <Spinner android:id="@+id/status" android:layout_toRightOf="@+id/name" android:layout_width="wrap_content" android:entries="@array/statusArray" android:layout_alignParentRight="true" android:layout_height="60px" android:prompt="@string/status_prompt"></Spinner>
-    <ListView android:layout_height="wrap_content" android:layout_below="@+id/status" android:layout_alignLeft="@+id/status" android:layout_width="400px" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:id="@+id/contactList" android:layout_margin="2px" android:entries="@array/TestList"></ListView>
-</RelativeLayout>
