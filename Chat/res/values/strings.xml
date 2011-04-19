@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, chat!</string>
-    <string name="app_name">ChatApp</string>
-    <string name="nameText">Test</string>
-    <string-array name="statusArray">
-        <item>Online</item>
-        <item>Offline</item>
-        <item>Busy</item>
-        <item>Away</item>
-    </string-array>
-        <string name="status_prompt">Status</string>
-        <string-array name="TestList">
-             <item>Online</item>
-        <item>Offline</item>
-        <item>Busy</item>
-        <item>Away</item>  <item>Online</item>
-        <item>Offline</item>
-        <item>Busy</item>
-        <item>Away</item>  <item>Online</item>
-        <item>Offline</item>
-        <item>Busy</item>
-        <item>Away</item>  <item>Online</item>
-        <item>Offline</item>
-        <item>Busy</item>
-        <item>Away</item>
-        </string-array>
-        <string name="titleText">Chat Session</string>
-        <string name="chat_box_prompt">Enter Text:</string>
-        <string name="add_button">Add</string>
-        <string name="email_label">Email:</string>
-        <string name="email_hint">email@email.com</string>
-        <string name="add_friend_title">Add Friend</string>
+	<string name="hello">Hello World, chat!</string>
+	<string name="app_name">ChatApp</string>
+	<string name="nameText">Test</string>
+	<string-array name="statusArray">
+		<item>Online</item>
+		<item>Offline</item>
+		<item>Busy</item>
+		<item>Away</item>
+	</string-array>
+	<string name="status_prompt">Status</string>
+	<string-array name="TestList">
+		<item>Asem</item>
+		<item>Ibrahim</item>
+		<item>Yusuf</item>
+		<item>Ahmed</item>
+	</string-array>
+	<string name="titleText">Chat Session</string>
+	<string name="chat_box_prompt">Enter Text:</string>
+	<string name="add_button">Add</string>
+	<string name="email_label">Email:</string>
+	<string name="email_hint">email@email.com</string>
+	<string name="add_friend_title">Add Friend</string>
 </resources>
