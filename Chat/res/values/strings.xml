@@ -22,4 +22,8 @@
 	<string name="email_label">Email:</string>
 	<string name="email_hint">email@email.com</string>
 	<string name="add_friend_title">Add Friend</string>
+	<string name="login_title">Login Screen</string>
+	<string name="login_label">Email:</string>
+	<string name="password_label">Password:</string>
+	<string name="login_button">Login</string>
 </resources>

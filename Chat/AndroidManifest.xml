@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.android.chat"
-      android:versionCode="1"
-      android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="8" />
+	package="com.android.chat" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name="ChatMain"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-                <activity android:name="ChatSession"
-                  android:label="@string/app_name">
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name="ChatMain" android:label="@string/app_name">
 
-        </activity>
-                <activity android:name="FriendAddition"
-                  android:label="@string/app_name">
-        </activity>
+		</activity>
+		<activity android:name="ChatSession" android:label="@string/app_name">
 
-    </application>
+
+		</activity>
+		<activity android:name="FriendAddition" android:label="@string/app_name">
+		</activity>
+		<activity android:name="Login" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	</application>
 </manifest>
