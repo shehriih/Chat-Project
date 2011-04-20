@@ -46,6 +46,7 @@ public class Login extends Activity
 				{
 					xmpp.connect();
 					xmpp.login(email, password);
+					
 					launchActivity(ChatMain.class);
 				}
 				catch (Exception e)
