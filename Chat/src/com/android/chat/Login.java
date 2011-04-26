@@ -1,11 +1,11 @@
 package com.android.chat;
 
+import org.jivesoftware.smack.ChatManager;
 import org.jivesoftware.smack.XMPPConnection;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputFilter.LengthFilter;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -47,7 +47,11 @@ public class Login extends Activity
 					xmpp.connect();
 					xmpp.login(email, password);
 					
-					launchActivity(ChatMain.class);
+					MySharedData  mysharedData = (MySharedData) getApplicationContext();
+					mysharedData.setXmpp(xmpp);
+					
+					Intent intent = new Intent(Login.this, ChatMain.class);
+					startActivity(intent);
 				}
 				catch (Exception e)
 				{
@@ -59,11 +63,4 @@ public class Login extends Activity
 			}
 		});
 	}
-
-	private void launchActivity(Class className)
-	{
-		Intent intent = new Intent(this, className);
-		startActivity(intent);
-	}
-
 }
