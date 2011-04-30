@@ -50,6 +50,7 @@ public final class R {
         public static final int add_button=0x7f040006;
         public static final int add_friend_title=0x7f040009;
         public static final int app_name=0x7f040001;
+        public static final int chatBoxText=0x7f04000f;
         public static final int chat_box_prompt=0x7f040005;
         public static final int email_hint=0x7f040008;
         public static final int email_label=0x7f040007;
@@ -59,6 +60,7 @@ public final class R {
         public static final int login_title=0x7f04000a;
         public static final int nameText=0x7f040002;
         public static final int password_label=0x7f04000c;
+        public static final int sendButton=0x7f04000e;
         public static final int status_prompt=0x7f040003;
         public static final int titleText=0x7f040004;
     }

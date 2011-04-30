@@ -26,4 +26,6 @@
 	<string name="login_label">Email:</string>
 	<string name="password_label">Password:</string>
 	<string name="login_button">Login</string>
+	<string name="sendButton">Send</string>
+	<string name="chatBoxText"></string>
 </resources>

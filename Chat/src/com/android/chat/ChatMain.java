@@ -15,11 +15,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ChatMain extends Activity
 {
 	private static final int ADD_FRIEND_ID = Menu.FIRST;
-	
+	private ArrayAdapter<String> nameList;
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -34,7 +35,7 @@ public class ChatMain extends Activity
 		
 		List<RosterEntry> contactListArray = (List<RosterEntry>) roster.getUnfiledEntries();
 		
-		ArrayAdapter<String> nameList = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
+		 nameList = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
 		
 		for (RosterEntry rosterEntry : contactListArray)
 		{
@@ -54,7 +55,12 @@ public class ChatMain extends Activity
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3)
 			{
-				launchActivity(ChatSession.class);				
+				//Toast.makeText(ChatMain.this, nameList.getItem(arg2), Toast.LENGTH_LONG).show();
+				Intent intent = new Intent(ChatMain.this,ChatSession.class);
+				intent.putExtra("email",  nameList.getItem(arg2));
+				startActivity(intent);
+				//launchActivity(ChatSession.class);	
+				
 			}			
 		});
 	}
